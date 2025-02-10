@@ -2,57 +2,111 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
 
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/fa451a6c23.js" crossorigin="anonymous"></script>
 
-    <!-- daisyui cnd -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-    <!-- style -->
-    <style>
-        .font-sora {
-            font-family: "Sora", serif;
-        }
-    </style>
+  <!-- daisyui cnd -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- style -->
+  <style>
+    .font-sora {
+      font-family: "Sora", serif;
+    }
+  </style>
 
 
 
-    <!-- font color style -->
+  <!-- font color style -->
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'font-color': 'rgba(23, 152, 0, 1)',
+            'color-primary-bg': 'rgba(255, 255, 255, 1)',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
 <body class="font-sora">
-    <!-- header part -->
-    <header>
-        
-    </header>
+  <!-- header part -->
+  <header class="lg:px-32 ">
+    <div class="">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <a class=" font-bold text-xl "><img src="c2-assets/logo-header.png" alt=""></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <!-- search -->
+            <i class="hidden sm:block mr-5 lg:ml-40 fa-solid fa-magnifying-glass"></i>
+            <!-- icon 2 -->
+            <i class="hidden sm:block  mr-5 fa-solid fa-cart-shopping"></i>
+            <a class=" btn mr-5 border border-lime-500 bg-white hidden sm:block pt-3" href="">Login</a>
+            <a class="btn btn-success  bg-bike-primary text-white hidden sm:block pt-3">Register</a>
+          </div>
 
-    <!-- main section -->
-    <main>
+          <!-- bar -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="lg:hidden sm:visible text-green-400"><hr></div>
+    
+  </header>
+  <div class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
+    <!-- title -->
+     <div class="flex justify-center items-center px-8 pt-7">
+      <h1 class="font-bold text-5xl">Freshness <span class="text-font-color">You Can</span> <br>
+        <span class="text-font-color">Count</span> On, Prices You’ll Love!</h1>
+     </div>
+     <p class="px-8 pt-7 justify-center items-center flex w-full">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+     <div class="flex justify-center items-center"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+  </div>
+  
+  <!-- main section -->
+  <main>
 
-    </main>
-    <!-- footer section -->
-    <footer>
+  </main>
+  <!-- footer section -->
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
